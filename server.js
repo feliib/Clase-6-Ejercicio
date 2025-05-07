@@ -13,9 +13,9 @@ conectarDB();
 
 console.log("EL PUERTO ES: ", PORT);
 
-app.use(express.json()); // Para que pueda leer JSON
+app.use(express.json()); 
 
-app.use("/", productosRouter); // Monta el router de productos en la raíz (puedes cambiar el prefijo si lo deseas, por ejemplo, '/api')
+app.use("/", productosRouter); 
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
